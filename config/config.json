@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "rudysantoso",
-    "password": "anaksuyit",
-    "database": "database_development",
+    "username": "robbijohan",
+    "password": "bodoamat1234",
+    "database": "db-projects",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+</head>
+
+<body>
+
+
+    <div class="badan">
+        <h2>List Product</h2>
+        <hr>
+        <% data.forEach(el => { %>
+        <div class="list-product">
+            <img src="<%= el.dataValues.image%>" width="100px"><br>
+            <%= el.dataValues.merk%><br>
+            <%= el.dataValues.size%><br>
+            <%= el.dataValues.price%><br>
+            <%= el.dataValues.type%>
+            <a href="/Delete/<%=el.dataValues.id%>">Delete</a>
+            <div class="tek">
+            </div>
+        </div>
+        <% }) %>
+        <br><br><br>
+        <a href="/CreateProduct">Create Product</a>
+        <div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+
+</body>
+
+</html>
