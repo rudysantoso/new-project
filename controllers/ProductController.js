@@ -46,7 +46,6 @@ class productController {
                 res.status(400).json(err)
             })
     }
-
 }
 
 module.exports = productController
