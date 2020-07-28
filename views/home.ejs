@@ -89,12 +89,15 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search..." style="height:38px">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary" type="button">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
+                    <form action="/search" method="GET">
+                        <input type="text" name="keyword" class="form-control" placeholder="Search..."
+                            style="height:38px">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
                 <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
                     style="border: 1px solid #ee4266;">

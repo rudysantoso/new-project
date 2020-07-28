@@ -36,7 +36,7 @@ router.get('/loginAdmin', UserAdminController.loginAdmin)
 router.get('/admin', productController.Admin)
 router.get('/CreateProduct', productController.renderCreateProduct)
 router.get('/Delete/:id', productController.deleteProduct)
-
+router.get('/search', productController.searchMerk)
 
 
 module.exports = router

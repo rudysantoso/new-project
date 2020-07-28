@@ -46,6 +46,19 @@ class productController {
                 res.status(400).json(err)
             })
     }
+    static searchMerk(req, res, next) {
+        const { keyword } = req.query;
+        Product.findAll({
+            where: { merk: { [Op.like]: '%' + keyword + '%' } }
+        })
+            .then(data => {
+                res.render('home', { data })
+            })
+            .catch(err => {
+                res.status(400).json(err)
+            })
+    }
 }
+
 
 module.exports = productController
